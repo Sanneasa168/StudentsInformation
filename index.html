@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List In HTML</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    div {
+      margin: 10px;
+    }
+    fieldset {
+      width: 888;
+    }
+    section {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <table border="1" cellpadding="15" width="800" height="300" align="center">
+      <caption>
+        Schedule of Foundation Students
+      </caption>
+      <colgroup>
+        <col span="2" bgcolor="#ccffcc" />
+      </colgroup>
+      <colgroup>
+        <col span="4" background="../images/back.webp" />
+      </colgroup>
+      <thead>
+        <tr bgcolor="pink">
+          <th colspan="2">Name</th>
+          <th>Class</th>
+          <th colspan="3">Course</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sin Sreyphea</td>
+          <td>Class 1</td>
+          <td>HTML ,CSS</td>
+          <td colspan="2">JAVA Script</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ing Kimleang</td>
+          <td>Class 2</td>
+          <td>Deployment</td>
+          <td colspan="3">Database</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>SunJessa</td>
+          <td>Class 3</td>
+          <td colspan="3">Python</td>
+        </tr>
+        <tr>
+          <td rowspan="3">4</td>
+          <td rowspan="3">Kim Chhansoheang</td>
+          <td rowspan="3">Class 4</td>
+          <td colspan="3">Java</td>
+        </tr>
+        <tr>
+          <td colspan="3">String Boot</td>
+        </tr>
+        <tr>
+          <td colspan="3">DevOp</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td bgcolor="whitesmoke" colspan="6">Total : 4 Students</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Form Input Informatio Students -->
+    <section>
+      <fieldset>
+        <legend>User Information</legend>
+        <div>
+          <label for="name"> Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email"> Email:</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" required />
+        </div>
+        <div>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday" required />
+        </div>
+        <div>
+          <label for="appiontment">Appiontment:</label>
+          <input type="datetime-local" id="appiontment" name="appiontment" required/>
+        </div>
+        <div>
+          <label for="file">File:</label>
+          <input type="file" id="file" name="multipe" required/>
+        </div>
+        <div>
+          <label for="range">Range</label>
+          <input type="range" id="range" name="rage" required />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" required />
+        </div>
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="male" id="male" />
+
+          <label for="female">Female </label>
+          <input type="radio" name="female" id="female" />
+
+          <label for="trans">Transdender </label>
+          <input type="radio" name="trans" id="trans" />
+        </div>
+        <div>
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="read" name="read" />
+
+          <label for="writing">Writing</label>
+          <input type="checkbox" id="write" name="write" />
+
+          <label for="coding">Coding</label>
+          <input type="checkbox" id="code" name="code"/>
+        </div>
+        <div>
+          <label for="disk_c">Disk usage C:</label>
+          <meter id="disk_c" value="8" min="0" max="9">2 out of 10</meter><br />
+          <label for="disk_c">Disk usage C:</label>
+          <meter id="disk_c" value="8" min="0" max="8">2 out of 10</meter><br />
+        </div>
+        <div>
+          <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div>
+          <label for="message"></label>
+          <textarea
+            placeholder="Input message"
+            type="message"
+            id="message"
+            rows="5"
+            cols="50"
+          ></textarea>
+        </div>
+      </fieldset>
+    </section>
+  </body>
+</html>
